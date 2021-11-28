@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="test(failed)">
+    <parameter name="browsername" value="edge"/>
+    <classes>
+      <class name="org.testngn.TestNgn">
+        <methods>
+          <include name="c_selectHotel"/>
+          <include name="b_searchHotel"/>
+          <include name="d_bookHotel"/>
+          <include name="afterDate"/>
+          <include name="startDate"/>
+          <include name="launchBro"/>
+          <include name="quit"/>
+          <include name="e_orderNumber"/>
+        </methods>
+      </class> <!-- org.testngn.TestNgn -->
+    </classes>
+  </test> <!-- test(failed) -->
+  <test thread-count="5" parallel="tests" name="test2(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="org.testngn.TestNgn">
+        <methods>
+          <include name="c_selectHotel"/>
+          <include name="a_loginPage"/>
+          <include name="b_searchHotel"/>
+          <include name="d_bookHotel"/>
+          <include name="afterDate"/>
+          <include name="startDate"/>
+          <include name="launchBro"/>
+          <include name="quit"/>
+          <include name="e_orderNumber"/>
+        </methods>
+      </class> <!-- org.testngn.TestNgn -->
+    </classes>
+  </test> <!-- test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
